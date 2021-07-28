@@ -397,6 +397,10 @@ main .btn-carrusel2:hover {
   width: fit-content;
 }
 
+.juegos .grid-juegos .grid-juegos_imagenes:hover {
+  background-color: blue;
+}
+
 @media (min-width: 1024px) {
   .juegos .grid-juegos .grid-juegos_imagenes {
     margin-right: 9px;

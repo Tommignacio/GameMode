@@ -50,6 +50,10 @@
             display: flex;
             width: fit-content;
 
+            &:hover{
+                background-color: blue;
+             }
+
             @media (min-width:1024px) {
                    
                margin-right: 9px;
