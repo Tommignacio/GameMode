@@ -1,0 +1,34 @@
+//VARIABLES//
+
+$color-verde:#73c1aa;
+$color-gris:#dadedc;
+$color-azul:#4c5c74;
+$color-azul-claro:#657a85; 
+$color-azul-oscuro:#282848;
+$color-gris-oscuro:#8c8c8c;
+$color-verde-oscuro:#5c8474;
+
+
+.btn-success {
+    color: #fff;
+    background-color:$color-azul!important;
+    border-color: $color-verde !important;
+  }
+  
+  .btn-success:hover {
+    background-color: $color-verde !important;
+      color: $color-azul !important;
+       border-color: $color-azul !important;
+  }
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.btn-success-reverse{
+  color: black;
+  background-color:$color-verde!important;
+  border-color: $color-azul !important;
+}
+.btn-success-reverse:hover {
+  background-color: $color-azul !important;
+    color: $color-verde !important;
+     border-color: $color-verde !important;
+}

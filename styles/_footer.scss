@@ -1,0 +1,127 @@
+#footer{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    background-color: $color-azul;
+  
+    
+        
+        .texto-redes{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #FFF;
+
+            @media (min-width:768px) {
+                justify-content: flex-start;
+               }
+
+            .texto-redes_p{
+               margin-top: 1rem;
+                color: #fff;
+               font-size: 0.75rem;
+               
+               @media (min-width:768px) {
+                font-size: 20px;
+                margin-left: 10px;
+               }
+               
+            }
+        }
+        
+        .contenedor-imagenes{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            @media (min-width:400px) {
+                flex-direction: row;
+
+            }
+
+            @media (min-width:768px) {
+                justify-content: flex-start;
+                 }
+            
+                .img-social{
+                display: flex;
+    
+                     .img-social_imagenes{
+                        height: 60px;
+                        width: 60px;
+                        margin: 10px;
+                         border-radius: 50%;
+                }
+             
+            }
+
+            }
+        
+       
+        
+      
+        
+        #logo-footer{
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+
+            @media (min-width:400px) {
+                
+                flex-direction: column;
+               }
+            
+            @media (min-width:768px) {
+                flex-direction: row;
+                justify-content: flex-end;
+                margin-top: -5px;
+               }
+           
+            .logo-footer_link{
+
+                display: flex;
+                align-items: center;
+                 justify-content: center;
+
+                    .logo-footer_link-logo{
+                        height: 50px;
+                        width: 50px; 
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        @media (min-width:768px) {
+                            height: 40px;
+                            width: 40px; 
+                             }
+                             
+                    }
+                        
+
+                 }
+
+            .logo-footer_txt{
+                  color: #fff;
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 font-size: 0.75rem;
+                 margin-left: 4px;
+
+                 @media (min-width:400px) {
+                    margin-top: 1rem;
+                     }
+    
+                 @media (min-width:768px) {
+                 font-size: 12px;
+                  }
+                  
+                    
+                }
+        }
+        
+      
+           
+}

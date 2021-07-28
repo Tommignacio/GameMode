@@ -1,0 +1,45 @@
+.minav{
+
+    background-color: $color-azul;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    box-shadow: 1px 9px 18px -7px rgba(76,92,116,0.82);
+-webkit-box-shadow: 1px 9px 18px -7px rgba(76,92,116,0.82);
+-moz-box-shadow: 1px 9px 18px -7px rgba(76,92,116,0.82);
+}
+
+.imagenNav{
+    height: 60px;
+    width: 60px;
+
+}
+
+a{
+    font-weight: 500;
+}
+
+a:hover{
+    color: $color-verde !important;
+}
+
+button:hover{
+    color: $color-verde !important;
+}
+
+.menu-desplegable{
+    background-color: $color-azul !important;
+}
+
+.mia{
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin-left: 1rem;
+}
+
+.misub-a{
+    font-size: 1.1rem;;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+background-color: transparent;
+}

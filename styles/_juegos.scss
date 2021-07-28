@@ -1,0 +1,176 @@
+
+.juegos{
+    margin-top: 101px;
+
+    .juegos-titulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .grid-juegos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        row-gap: 20px ;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 20px;
+
+        @media (min-width:768px) {
+            grid-template-columns: 1fr 1fr;
+             grid-template-rows: 1fr 1fr;
+             column-gap: 30px;
+             row-gap: 20px ;
+             padding: 40px;
+             margin: 0 auto;
+
+            
+        }
+
+        @media (min-width:1024px) {
+            grid-template-columns: 1fr 1fr 1fr;
+             grid-template-rows: 1fr 1fr;
+           
+            
+        }
+
+
+
+
+        .grid-juegos_imagenes{
+          
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            width: fit-content;
+
+            @media (min-width:1024px) {
+                   
+               margin-right: 9px;
+               margin-left: 9px;
+
+                
+            }
+
+
+
+            .grid-juegos_imagenes-todas{ 
+                width: 100%;
+                height: 100%;
+
+                @media (min-width:768px) {
+                    width: 100%;
+                    height: 98%;
+                    object-fit: cover;
+                    
+                }
+                @media (min-width:1024px) {
+                   
+                    height: 92%;
+
+                    
+                }
+        
+            }
+
+        }
+
+     }
+
+        .boton-p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+             }
+
+
+       
+
+        .collapse{
+                        
+
+            .collapse_grid-juegos {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr;
+                row-gap: 20px ;
+                margin: 40px;
+
+                @media (min-width:768px) {
+                    grid-template-columns: 1fr 1fr;
+                     grid-template-rows: 1fr 1fr;
+                     column-gap: 30px;
+                     row-gap: 20px ;
+                     padding: 40px;
+                     margin: 0 auto;
+                    
+                }
+
+                @media (min-width:1024px) {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+           
+            
+                 }
+                        
+
+                    .collapse_grid-juegos_imagenes{
+
+                                    
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    width: fit-content;
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+
+                     @media (min-width:1024px) {
+                           
+                       margin-right: 9px;
+                       margin-left: 9px;
+        
+                        
+                    }
+
+                        .collapse_grid-juegos_imagenes-todas{
+
+                            width: 100%;
+                            height: 100%;
+
+                            @media (min-width:768px) {
+                                width: 100%;
+                                height: 98%;
+                                object-fit: cover;
+
+
+                                @media (min-width:1024px) {
+                   
+                                    height: 92%;
+                
+                                    
+                                }
+                                
+                            }
+                        }
+
+
+
+                     }
+
+                
+            }
+
+
+    }
+
+
+
+}
+
