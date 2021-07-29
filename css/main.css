@@ -418,14 +418,6 @@ main .btn-carrusel2:hover {
           backface-visibility: hidden;
 }
 
-.juegos .grid-juegos .grid-juegos_imagenes .grid-juegos_imagenes-todas:hover {
-  opacity: 0.3;
-}
-
-.juegos .grid-juegos .grid-juegos_imagenes .grid-juegos_imagenes-todas:hover button {
-  opacity: 1;
-}
-
 @media (min-width: 768px) {
   .juegos .grid-juegos .grid-juegos_imagenes .grid-juegos_imagenes-todas {
     width: 100%;
@@ -454,7 +446,15 @@ main .btn-carrusel2:hover {
   text-align: center;
 }
 
-.juegos .grid-juegos .grid-juegos_imagenes .grid-juegos_imagenes-boton:hover {
+.juegos .grid-juegos .grid-juegos_imagenes:hover .grid-juegos_imagenes-todas {
+  opacity: 0.8;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.43);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.43);
+  -webkit-transform: scale(1.013);
+          transform: scale(1.013);
+}
+
+.juegos .grid-juegos .grid-juegos_imagenes:hover .grid-juegos_imagenes-boton {
   opacity: 1;
 }
 
@@ -478,7 +478,9 @@ main .btn-carrusel2:hover {
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   row-gap: 20px;
-  margin: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 20px;
 }
 
 @media (min-width: 768px) {
@@ -521,6 +523,7 @@ main .btn-carrusel2:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 @media (min-width: 1024px) {
@@ -533,6 +536,14 @@ main .btn-carrusel2:hover {
 .juegos .collapse .collapse_grid-juegos .collapse_grid-juegos_imagenes .collapse_grid-juegos_imagenes-todas {
   width: 100%;
   height: 100%;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 @media (min-width: 768px) {
@@ -544,10 +555,35 @@ main .btn-carrusel2:hover {
   }
 }
 
-@media (min-width: 768px) and (min-width: 1024px) {
+@media (min-width: 1024px) {
   .juegos .collapse .collapse_grid-juegos .collapse_grid-juegos_imagenes .collapse_grid-juegos_imagenes-todas {
     height: 92%;
   }
+}
+
+.juegos .collapse .collapse_grid-juegos .collapse_grid-juegos_imagenes .collapse_grid-juegos_imagenes-boton {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.juegos .collapse .collapse_grid-juegos .collapse_grid-juegos_imagenes:hover .collapse_grid-juegos_imagenes-todas {
+  opacity: 0.8;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.43);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.43);
+  -webkit-transform: scale(1.013);
+          transform: scale(1.013);
+}
+
+.juegos .collapse .collapse_grid-juegos .collapse_grid-juegos_imagenes:hover .collapse_grid-juegos_imagenes-boton {
+  opacity: 1;
 }
 
 #consola {

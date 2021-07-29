@@ -70,14 +70,7 @@
                 height: auto;
                 transition: .5s ease;
                 backface-visibility: hidden;
-
-                &:hover {
-                    opacity: 0.3;
-                  }
-                  &:hover button {
-                    opacity: 1;
-                }
-                
+               
 
                 @media (min-width:768px) {
                     width: 100%;
@@ -102,13 +95,21 @@
                 transform: translate(-50%, -50%);
                 -ms-transform: translate(-50%, -50%);
                 text-align: center;
-
-                &:hover  {
-                    opacity: 1;
-                  }
                 
                   
             }
+
+            &:hover  {
+                .grid-juegos_imagenes-todas{
+                    opacity: 0.8;
+                    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.43); 
+                    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.43);
+                    transform: scale(1.013);
+                }
+                .grid-juegos_imagenes-boton{
+                    opacity:1;
+                }
+              }
 
         }
 
@@ -131,7 +132,9 @@
                 grid-template-columns: 1fr;
                 grid-template-rows: 1fr;
                 row-gap: 20px ;
-                margin: 40px;
+                margin-left: 20px;
+                margin-right: 20px;
+                padding: 20px;
 
                 @media (min-width:768px) {
                     grid-template-columns: 1fr 1fr;
@@ -151,9 +154,8 @@
                  }
                         
 
-                    .collapse_grid-juegos_imagenes{
+                    .collapse_grid-juegos_imagenes{      
 
-                                    
                     width: 100%;
                     height: auto;
                     object-fit: cover;
@@ -161,6 +163,7 @@
                     justify-content: center;
                     align-items: center;
                     display: flex;
+                    position: relative;
 
                      @media (min-width:1024px) {
                            
@@ -174,11 +177,18 @@
 
                             width: 100%;
                             height: 100%;
+                            opacity: 1;
+                            display: block;
+                            width: 100%;
+                            height: auto;
+                            transition: .5s ease;
+                            backface-visibility: hidden;
 
                             @media (min-width:768px) {
                                 width: 100%;
                                 height: 98%;
                                 object-fit: cover;
+                            }
 
 
                                 @media (min-width:1024px) {
@@ -187,9 +197,35 @@
                 
                                     
                                 }
+                         }
+
+                                .collapse_grid-juegos_imagenes-boton{
+                                    transition: .5s ease;
+                                    opacity: 0;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                    -ms-transform: translate(-50%, -50%);
+                                    text-align: center;
+                                    
+                                      
+                                }
+                    
+                                 &:hover  {
+                                    .collapse_grid-juegos_imagenes-todas{
+                                        opacity: 0.8;
+                                        -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.43); 
+                                        box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.43);
+                                        transform: scale(1.013);
+                                    }
+                                    .collapse_grid-juegos_imagenes-boton{
+                                        opacity:1;
+                                    }
+                                  }
                                 
                             }
-                        }
+                        
 
 
 
@@ -203,5 +239,5 @@
 
 
 
-}
+
 
