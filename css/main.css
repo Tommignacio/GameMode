@@ -65,10 +65,36 @@ main {
   margin-top: 70px;
 }
 
+main .contenedor-img-carousel {
+  z-index: 0;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+main .contenedor-img-carousel::before {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  display: block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+main .texto-carrusel {
+  font-weight: 900;
+}
+
 @media (max-width: 450px) {
   main .texto-carrusel {
-    top: 20px;
+    top: 87px;
     text-align: center;
+    font-size: 15px;
+    text-align: center;
+    max-width: 300px;
   }
 }
 
@@ -85,6 +111,7 @@ main {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    top: 40px;
   }
 }
 
@@ -94,7 +121,7 @@ main .texto-carrusel .titulo-carrusel {
 
 @media (max-width: 450px) {
   main .texto-carrusel .titulo-carrusel {
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
     max-width: 300px;
   }
@@ -108,16 +135,14 @@ main .texto-carrusel .titulo-carrusel {
   }
 }
 
-@media (max-width: 450px) {
-  main .texto-carrusel .texto-carrusel {
-    font-size: 15px;
-    text-align: center;
-    max-width: 300px;
+@media (max-width: 280px) {
+  main .texto-carrusel .titulo-carrusel {
+    display: none;
   }
 }
 
-@media (max-width: 396px) {
-  main .texto-carrusel .texto-no {
+@media (max-width: 450px) {
+  main .texto-no {
     display: none;
   }
 }
@@ -132,6 +157,13 @@ main .texto-carrusel .titulo-carrusel {
 @media (max-width: 396px) {
   main .btn-carrusel1 {
     width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 280px) {
+  main .btn-carrusel1 {
+    width: 65%;
     margin: 0 auto;
   }
 }
