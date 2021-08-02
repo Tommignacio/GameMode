@@ -24,7 +24,12 @@ main{
 
         .texto-carrusel{
             font-weight: 900;
-            
+            font-size: 21px;
+
+        @media (max-width: 768px) {
+            font-size: 18px;
+     
+                }
             @media (max-width: 450px) {
             top: 87px;
             text-align: center;
