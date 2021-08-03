@@ -46,6 +46,17 @@
 
         .consola_contenedor-consolas_text{
             font-size: 20px;
+            width: auto;
+            
+
+            @media (min-width:768px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            padding: 20px;
+            }
 
             .consola_contenedor-consolas_text-titulo{
                 text-align:center
@@ -57,7 +68,15 @@
         }
 
         .consola_contenedor-consolas_imagen{
-            width: auto;
+        
+             width: auto;
+           
+
+            @media (min-width:768px) {
+                width: 50%;
+                padding: 20px;
+              }
+                
 
             .consola_contenedor-consolas_imagen-marcas{
                 object-fit: cover;
