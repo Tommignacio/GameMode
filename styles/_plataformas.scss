@@ -13,7 +13,6 @@
 
 
         .consola-contenedor_texto{
-            color: $color-azul;
             padding: 1.7em;
         }
 
@@ -59,11 +58,13 @@
             }
 
             .consola_contenedor-consolas_text-titulo{
-                text-align:center
+                text-align:center;
+                padding: 5px;
             }
 
             .consola_contenedor-consolas_text-p{
-                text-align:center
+                text-align:center;
+                padding: 10px;
             }
         }
 

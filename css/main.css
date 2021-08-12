@@ -17,6 +17,14 @@ h1 {
   font-family: 'Patua One', cursive;
 }
 
+h2 {
+  font-family: 'Patua One', cursive;
+}
+
+h3 {
+  font-family: 'Patua One', cursive;
+}
+
 .minav {
   background-color: #4c5c74;
   padding-top: 0.2rem;
@@ -272,6 +280,9 @@ main .btn-carrusel2:hover {
 .catalogo .catalogo_imagen_fondo .catalogo_imagen_fondo_texto {
   color: white;
   padding: 1.7em;
+  -webkit-transform: translate(0%, 12%);
+          transform: translate(0%, 12%);
+  text-align: center;
 }
 
 .catalogo .catalogo_imagen_fondo .mi-btn-catalogo {
@@ -379,6 +390,7 @@ main .btn-carrusel2:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
 .juegos .grid-juegos {
@@ -640,7 +652,6 @@ main .btn-carrusel2:hover {
 }
 
 #consola .consola-contenedor .consola-contenedor_texto {
-  color: #4c5c74;
   padding: 1.7em;
 }
 
@@ -694,10 +705,12 @@ main .btn-carrusel2:hover {
 
 #consola .consola_contenedor-consolas .consola_contenedor-consolas_text .consola_contenedor-consolas_text-titulo {
   text-align: center;
+  padding: 5px;
 }
 
 #consola .consola_contenedor-consolas .consola_contenedor-consolas_text .consola_contenedor-consolas_text-p {
   text-align: center;
+  padding: 10px;
 }
 
 #consola .consola_contenedor-consolas .consola_contenedor-consolas_imagen {
@@ -1190,17 +1203,13 @@ body {
           align-items: center;
   font-size: 0.75rem;
   margin-left: 4px;
-}
-
-@media (min-width: 400px) {
-  #footer #logo-footer .logo-footer_txt {
-    margin-top: 1rem;
-  }
+  margin-top: 1rem;
 }
 
 @media (min-width: 768px) {
   #footer #logo-footer .logo-footer_txt {
     font-size: 12px;
+    margin-top: 0rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
