@@ -8,10 +8,9 @@
        
 
             .nosotros_container_txt-h1{
-              font-size: 25px;
-              margin: 0 auto;
+
               margin-bottom: revert;
-             
+              text-align: center;
             }
 
             .nosotros_container_de-imagen{
@@ -59,6 +58,9 @@
                    font-size: 1.2em ;
                    max-width: 45%;
                    top: calc(32%);
+                   text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.78);
+                    
+                
                 }
 
                 @media (min-width:1080px) {

@@ -156,6 +156,10 @@ main .texto-carrusel .titulo-carrusel {
   }
 }
 
+main .texto-carrusel .sombra-txt {
+  text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.78);
+}
+
 @media (max-width: 450px) {
   main .texto-no {
     display: none;
@@ -270,6 +274,18 @@ main .btn-carrusel2:hover {
           align-items: center;
 }
 
+.catalogo .catalogo_imagen_fondo::before {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
 @media (min-width: 768px) {
   .catalogo .catalogo_imagen_fondo {
     height: 20em;
@@ -283,6 +299,10 @@ main .btn-carrusel2:hover {
   -webkit-transform: translate(0%, 12%);
           transform: translate(0%, 12%);
   text-align: center;
+}
+
+.catalogo .catalogo_imagen_fondo .sombra-txt {
+  text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.78);
 }
 
 .catalogo .catalogo_imagen_fondo .mi-btn-catalogo {
@@ -377,7 +397,7 @@ main .btn-carrusel2:hover {
 }
 
 .juegos {
-  margin-top: 101px;
+  margin-top: 110px;
 }
 
 .juegos .juegos-titulo {
@@ -652,7 +672,11 @@ main .btn-carrusel2:hover {
 }
 
 #consola .consola-contenedor .consola-contenedor_texto {
-  padding: 1.7em;
+  text-align: center;
+}
+
+#consola .consola-contenedor .consola-contenedor_texto .consola-contenedor_texto_h1 {
+  margin-bottom: revert;
 }
 
 #consola .consola-contenedor .consola-contenedor_img {
@@ -796,9 +820,8 @@ main .btn-carrusel2:hover {
 }
 
 #nosotros .nosotros_container .nosotros_container_txt-h1 {
-  font-size: 25px;
-  margin: 0 auto;
   margin-bottom: revert;
+  text-align: center;
 }
 
 #nosotros .nosotros_container .nosotros_container_de-imagen {
@@ -853,6 +876,7 @@ main .btn-carrusel2:hover {
     font-size: 1.2em;
     max-width: 45%;
     top: calc(32%);
+    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.78);
   }
 }
 
@@ -971,7 +995,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 100px;
+  margin-top: 56px;
 }
 
 .miTxtC .mi-nav-contacto {
@@ -1042,6 +1066,9 @@ body {
   width: 100vw;
   height: auto;
   background-color: #4c5c74;
+  box-shadow: 5px 0px 12px -1px rgba(76, 92, 116, 0.82);
+  -webkit-box-shadow: 5px 0px 12px -1px rgba(76, 92, 116, 0.82);
+  -moz-box-shadow: 5px 0px 12px -1px rgba(76, 92, 116, 0.82);
 }
 
 #footer .texto-redes {
@@ -1062,13 +1089,15 @@ body {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    margin-left: 10px;
   }
 }
 
 #footer .texto-redes .texto-redes_p {
   margin-top: 1rem;
   color: #fff;
-  font-size: 0.75rem;
+  font-size: 1rem;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -1108,6 +1137,7 @@ body {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    margin-left: 10px;
   }
 }
 

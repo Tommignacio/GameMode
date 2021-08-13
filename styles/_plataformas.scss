@@ -13,7 +13,11 @@
 
 
         .consola-contenedor_texto{
-            padding: 1.7em;
+            text-align: center;
+
+            .consola-contenedor_texto_h1{
+                margin-bottom: revert;
+            }
         }
 
 

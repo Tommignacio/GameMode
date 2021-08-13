@@ -4,6 +4,9 @@
     width: 100vw;
     height: auto;
     background-color: $color-azul;
+    box-shadow: 5px 0px 12px -1px rgba(76,92,116,0.82);
+-webkit-box-shadow: 5px 0px 12px -1px rgba(76,92,116,0.82);
+-moz-box-shadow: 5px 0px 12px -1px rgba(76,92,116,0.82);
   
     
         
@@ -15,12 +18,14 @@
 
             @media (min-width:768px) {
                 justify-content: flex-start;
+                margin-left: 10px;
                }
 
             .texto-redes_p{
                margin-top: 1rem;
                 color: #fff;
-               font-size: 0.75rem;
+               font-size: 1rem;
+               text-align: center;
                
                @media (min-width:768px) {
                 font-size: 20px;
@@ -43,6 +48,7 @@
 
             @media (min-width:768px) {
                 justify-content: flex-start;
+                margin-left: 10px;
                  }
             
                 .img-social{
